@@ -9,6 +9,7 @@ import Users from "./components/Users";
 import Login from "./components/Login";
 import Navbar from "./components/Navbar";
 import UserDetail from "./components/UserDetail";
+import Test from "./components/test/Test";
 // import Counter from "./components/Counter";
 // import Youtube from "./components/Youtube";
 // import Customer from "./components/Customer";
@@ -23,6 +24,17 @@ function App() {
         <Route path="/users/:id" element={<UserDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/login" element={<Login />} />
+        <Route
+          path="/test"
+          element={
+            <Test
+              middleName=" prakash "
+              firstName="OM"
+              messageCount={10}
+              isLoggedIn={true}
+            />
+          }
+        />
         {/* <Customer name="Om" title="developer" age={25} />
       <FunComp name="dhiraj" age={25} /> */}
         {/* <Counter />
